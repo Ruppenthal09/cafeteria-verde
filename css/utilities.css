@@ -1,0 +1,17 @@
+/* Spacing helpers */
+.mt-1{ margin-top:var(--space-1) }
+.mt-2{ margin-top:var(--space-2) }
+.mb-2{ margin-bottom:var(--space-2) }
+.p-2{ padding:var(--space-2) }
+
+.text-center{ text-align:center }
+.hidden{ display:none }
+
+/* Accessibility */
+.sr-only{ position:absolute; width:1px; height:1px; padding:0; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0 }
+
+/* Simple grid column helpers (common spans) */
+.col-12{ grid-column: span 12 }
+.col-6{ grid-column: span 6 }
+.col-4{ grid-column: span 4 }
+.col-3{ grid-column: span 3 }

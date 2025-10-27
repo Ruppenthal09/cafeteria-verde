@@ -1,0 +1,18 @@
+/* Entrypoint styles + small tweaks */
+@import url('variables.css');
+@import url('layout.css');
+@import url('components.css');
+@import url('utilities.css');
+
+/* Small theme tweaks */
+.container{ padding-left:var(--space-3); padding-right:var(--space-3); }
+.hero .accent{ color:var(--color-accent-strong); }
+
+/* Buttons states */
+.btn:disabled{ opacity:0.6; cursor:not-allowed }
+
+/* Form invalid styles */
+input:invalid{ border-color:#cc4a3e }
+
+/* Ensure images placeholders look ok when missing */
+img{ display:block }
