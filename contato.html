@@ -1,0 +1,32 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contato - Cafeteria Verde</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header"><div class="container header-inner"><a href="index.html" class="brand">Cafeteria Verde</a></div></header>
+  <main class="container">
+    <section class="section">
+      <h1>Contato</h1>
+      <p>Envie sua mensagem ou sugestão.</p>
+      <form class="form card">
+        <label for="nomec">Nome</label>
+        <input id="nomec" required>
+        <label for="emailc">Email</label>
+        <input id="emailc" type="email" required>
+        <label for="msg">Mensagem</label>
+        <textarea id="msg" rows="5"></textarea>
+        <div class="form-actions"><button class="btn btn-primary">Enviar</button></div>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><p>© <span id="year3"></span> Cafeteria Verde</p></div></footer>
+  <script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
+</body>
+</html>

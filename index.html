@@ -1,0 +1,239 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cafeteria Verde - Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="imagens/logo.png" alt="Cafeteria Verde" class="logo" />
+        <span class="brand-name">Cafeteria Verde</span>
+      </a>
+
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">☰</button>
+
+      <nav id="main-nav" class="nav">
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <button class="dropdown-btn" aria-expanded="false">Produtos ▾</button>
+            <ul class="submenu">
+              <li><a href="#cafes">Cafés</a></li>
+              <li><a href="#salgados">Salgados</a></li>
+              <li><a href="#doces">Doces</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Bem-vindo à <span class="accent">Cafeteria Verde</span></h1>
+          <p>Sabores artesanais, grãos selecionados e um espaço pensado para você relaxar. Venha tomar um café conosco.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#cafes">Ver Produtos</a>
+            <a class="btn btn-outline" href="#contato">Reservar Mesa</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="imagens/hero.jpg" alt="Xícara de café" />
+        </div>
+      </div>
+    </section>
+
+    <section id="cafes" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Nossos Cafés</h2>
+          <p>Grãos especiais, torra na medida e blends exclusivos.</p>
+        </div>
+
+        <div class="grid grid-cards">
+          <!-- Card 1 -->
+          <article class="card">
+            <img src="imagens/placeholder-coffee1.jpg" alt="Blend da Casa" class="card-media"/>
+            <div class="card-body">
+              <h3 class="card-title">Blend da Casa</h3>
+              <p class="card-text">Combinação equilibrada de notas achocolatadas e frutadas.</p>
+              <div class="card-footer">
+                <span class="tag">Mais pedido</span>
+                <div>
+                  <button class="btn btn-sm">Adicionar</button>
+                </div>
+              </div>
+            </div>
+          </article>
+           <!-- Card 2 -->
+          <article class="card">
+            <img src="imagens/placeholder-coffee2.jpg" alt="Expresso Intenso" class="card-media"/>
+            <div class="card-body">
+              <h3 class="card-title">Expresso Intenso</h3>
+              <p class="card-text">Corpo pronunciado e crema densa — para quem gosta de potência.</p>
+              <div class="card-footer">
+                <span class="tag">Forte</span>
+                <div>
+                  <button class="btn btn-sm">Adicionar</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card">
+            <img src="imagens/placeholder-coffee3.jpg" alt="Café Gelado" class="card-media"/>
+            <div class="card-body">
+              <h3 class="card-title">Cold Brew</h3>
+              <p class="card-text">Infusão lenta, sabor suave e menos acidez.</p>
+              <div class="card-footer">
+                <span class="tag">Tropical</span>
+                <div>
+                  <button class="btn btn-sm">Adicionar</button>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section section-cta">
+      <div class="container">
+        <div class="grid grid-2">
+          <div>
+            <h2>Reserve uma mesa</h2>
+            <p>Faça sua reserva rápida para garantir o melhor lugar.</p>
+            <ul class="contact-list">
+              <li>📍 Rua Andradas, 123</li>
+              <li>⏰ Seg - Sex: 8h - 20h</li>
+            </ul>
+          </div>
+          <form id="reserva-form" class="form card" novalidate>
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" type="text" required />
+
+            <label for="telefone">Telefone</label>
+            <input id="telefone" name="telefone" type="tel" required />
+
+            <label for="data">Data</label>
+            <input id="data" name="data" type="date" required />
+
+            <label for="observacao">Observação</label>
+            <textarea id="observacao" name="observacao" rows="3"></textarea>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Enviar reserva</button>
+              <button type="reset" class="btn btn-outline">Limpar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Cafeteria Verde — Feito com ☕ e CSS3</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+      </div>
+    </div>
+  </footer>
+   <!-- Toast container -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <!-- Modal (example) -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-dialog">
+      <button class="modal-close" aria-label="Fechar">✕</button>
+      <h3>Obrigado!</h3>
+      <p>Sua reserva foi enviada. Entraremos em contato.</p>
+      <div class="modal-actions">
+        <button class="btn btn-primary modal-ok">OK</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mainNav = document.getElementById('main-nav');
+    menuToggle.addEventListener('click', () => {
+      const expanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
+      menuToggle.setAttribute('aria-expanded', !expanded);
+      mainNav.classList.toggle('open');
+    });
+
+    // Dropdown behavior (accessible)
+    document.querySelectorAll('.dropdown').forEach(dd => {
+      const btn = dd.querySelector('.dropdown-btn');
+      const submenu = dd.querySelector('.submenu');
+      btn.addEventListener('click', (e) => {
+        const exp = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', !exp);
+        submenu.classList.toggle('open');
+      });
+    });
+    // Simple form validation + toast + modal
+    const form = document.getElementById('reserva-form');
+    const toast = document.getElementById('toast');
+    const modal = document.getElementById('modal');
+    const modalClose = modal.querySelector('.modal-close');
+    const modalOk = modal.querySelector('.modal-ok');
+
+    function showToast(msg){
+      toast.textContent = msg;
+      toast.classList.add('show');
+      setTimeout(()=> toast.classList.remove('show'), 3000);
+    }
+
+    function openModal(){
+      modal.setAttribute('aria-hidden','false');
+      modal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeModal(){
+      modal.setAttribute('aria-hidden','true');
+      modal.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    modalClose.addEventListener('click', closeModal);
+    modalOk.addEventListener('click', closeModal);
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if(!form.checkValidity()){
+        showToast('Por favor preencha os campos obrigatórios.');
+        return;
+      }
+      showToast('Reserva enviada com sucesso!');
+      openModal();
+      form.reset();
+    });
+
+    // Close modal on ESC
+    document.addEventListener('keydown', (e) => {
+      if(e.key === 'Escape') closeModal();
+    });
+  </script>
+</body>
+</html>
